@@ -1,0 +1,5 @@
+<view>
+  选择您要发布的失物招领类型
+    <navigator url="/pages/postOthers/postOthers">其他</navigator>
+    <navigator url="/pages/postCard/postCard">校园卡</navigator>
+</view>

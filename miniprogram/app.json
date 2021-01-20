@@ -1,0 +1,51 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/find/find",
+    "pages/myId/myId",
+    "pages/posts/posts",
+    "pages/findCard/findCard",
+    "pages/findOthers/findOthers",
+    "pages/postCard/postCard",
+    "pages/postOthers/postOthers"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "南邮寻物平台",
+    "navigationBarTextStyle":"black",
+    "backgroundColorTop": "4169e1"
+  },
+  "tabBar": {
+    "list":[
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "image/index.png",
+        "selectedIconPath": "image/index-h.png"
+      },
+      {
+        "pagePath": "pages/find/find",
+        "text": "寻物",
+        "iconPath": "image/find.png",
+        "selectedIconPath": "image/find-h.png"
+      },
+      {
+        "pagePath": "pages/posts/posts",
+        "text": "发布",
+        "iconPath": "image/posts.png",
+        "selectedIconPath": "image/posts-h.png"
+      },
+      {
+        "pagePath": "pages/myId/myId",
+        "text": "我的",
+        "iconPath": "image/user.png",
+        "selectedIconPath": "image/user-h.png"
+      }
+    ],
+    "selectedColor":"4169e1"
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+}
