@@ -73,6 +73,12 @@
         {
           "name": "pages/findOthers/findOthers",
           "pathName": "pages/findOthers/findOthers",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/myId/myId",
+          "pathName": "pages/myId/myId",
           "scene": null
         }
       ]

@@ -2,12 +2,16 @@
 // 获取应用实例
 const app = getApp()
 
+import Toast from '@vant/weapp/toast/toast';
+
 Page({
+ 
   data: {
     motto: '请点击“获取头像昵称”以登录',
     userInfo: {},
     hasUserInfo: false,
-    canIUse: wx.canIUse('button.open-type.getUserInfo')
+    canIUse: wx.canIUse('button.open-type.getUserInfo'),
+    stdId:"",
   },
   // 事件处理函数
   bindViewTap() {
@@ -50,5 +54,6 @@ Page({
       userInfo: e.detail.userInfo,
       hasUserInfo: true
     })
+    Toast('若不输入校园卡号则无法使用寻卡功能');
   }
 })

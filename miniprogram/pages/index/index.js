@@ -6,17 +6,21 @@ Page({
    */
   data: {
     activeKey:0,
-    findNum:5,
-    postNum:3,
+    findNum:1,
+    postNum:1,
+    show:0
   },
   onChange(event){
     console.log(event.detail)
+    this.setData({
+      show:event.detail
+    })
   },
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-
+    
   },
 
   /**

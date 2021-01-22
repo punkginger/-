@@ -1,30 +1,26 @@
 <view class="box">
   <view class="sideBar">
     <van-sidebar active-key="{{ activeKey }}" bind:change="onChange" >
-      <van-sidebar-item title="失物招领"/>
+      <van-sidebar-item title="失物招领" class="side"/>
       <van-sidebar-item title="寻物启事"/>
     </van-sidebar>
   </view>
   <view>
-    <view wx:if="{{event.detail==0}}">
+    <view wx:if="{{show==0}}">
       <view wx:for="{{postNum}}" wx:key="index" >
         <van-card
-          num="2"
-          price="2.00"
-          desc="hhh"
-          title="yes"
-          thumb="hhh"
+          desc="{{postDesc}}"
+          title="{{postTitle}}"
+          thumb="{{postPic}}"
         />
       </view>
     </view>
     <view wx:else>
       <view wx:for="{{findNum}}" wx:key="index">
         <van-card
-          num="2"
-          price="2.00"
-          desc="描述信息"
-          title="商品标题"
-          thumb="{{ imageURL }}"
+          desc="{{findDesc}}"
+          title="{{findTitle}}"
+          thumb="{{findPic}}"
         />
       </view>
     </view>

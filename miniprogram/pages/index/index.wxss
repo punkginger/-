@@ -2,7 +2,7 @@ page{
   height: 100%;
 }
 .sideBar{
-  width: 30%;
+  width: 25%;
   height: 100%;
 }
 .box{
