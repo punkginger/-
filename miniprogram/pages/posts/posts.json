@@ -1,5 +1,5 @@
 {
-  "usingComponents": {},
+  "usingComponents": {"van-icon": "@vant/weapp/icon/index"},
   "navigationBarTitleText":"发布失物招领",
   "enablePullDownRefresh":true
 

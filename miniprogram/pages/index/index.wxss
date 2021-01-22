@@ -1,1 +1,13 @@
-/* pages/index/index.wxss */
+page{
+  height: 100%;
+}
+.sideBar{
+  width: 30%;
+  height: 100%;
+}
+.box{
+  display: flex;
+  flex-direction:row;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+}

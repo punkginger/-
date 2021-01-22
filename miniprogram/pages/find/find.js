@@ -1,4 +1,4 @@
-// pages/find/find.js
+const db=wx.cloud.database()
 Page({
 
   /**

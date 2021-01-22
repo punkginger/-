@@ -1,10 +1,18 @@
-<view>
-  您丢失的物品是：
-    <navigator url="/pages/findOthers/findOthers">
-      其他
-    </navigator>
-    <navigator url="/pages/findCard/findCard">
-      校园卡
-    </navigator>
+<view class="container">
+  <view class="title">
+    您丢失的物品是：
+    <view class="other">
+      <van-icon name="other-pay" />
+      <navigator url="../findOthers/findOthers" >
+        其他
+      </navigator>
+    </view>
+      <view class="card">
+        <van-icon name="credit-pay" />
+      <navigator url="../findCard/findCard">
+        校园卡
+      </navigator>
+    </view>
+  </view>
 </view>
 <!-- 这里我的想法是分成上下/左右两部分，一部分是丢失饭卡，一部分是丢失的其他物品 -->

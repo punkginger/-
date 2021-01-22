@@ -1,1 +1,21 @@
-/* pages/posts/posts.wxss */
+.other{
+  height: 30%;
+  padding-top: 50%;
+  text-align: center;
+}
+.card{
+  height: 30%;
+  padding-top: 50%;
+  text-align: center;
+}
+.container{
+  height: 100%;
+}
+.title{
+  height: 80%;
+  padding-top: 10%;
+  text-align: center;
+}
+page{
+  height: 100%;
+}

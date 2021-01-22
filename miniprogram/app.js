@@ -13,6 +13,16 @@ App({
         traceUser: true,
       })
     }
+    /* if (wx.getStorageSync('user')) {
+      wx.reLaunch({
+          url: 'pages/find/find'
+      })
+  } else {
+      wx.reLaunch({
+          url: 'pages/login/login'
+      })
+  } */
+
 
     this.globalData = {}
   }

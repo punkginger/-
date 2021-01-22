@@ -1,5 +1,18 @@
-<view>
-  选择您要发布的失物招领类型
-    <navigator url="/pages/postOthers/postOthers">其他</navigator>
-    <navigator url="/pages/postCard/postCard">校园卡</navigator>
+<view class="container">
+  <view class="title">
+    您发布的物品是：
+    <view class="other">
+      <van-icon name="other-pay" />
+      <navigator url="../postOthers/postOthers" >
+        其他
+      </navigator>
+    </view>
+      <view class="card">
+        <van-icon name="credit-pay" />
+      <navigator url="../postCard/postCard">
+        校园卡
+      </navigator>
+    </view>
+  </view>
 </view>
+<!-- 这里我的想法是分成上下/左右两部分，一部分是丢失饭卡，一部分是丢失的其他物品 -->

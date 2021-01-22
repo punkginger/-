@@ -1,14 +1,14 @@
 {
   "pages":[
     "pages/index/index",
-    "pages/logs/logs",
     "pages/find/find",
     "pages/myId/myId",
     "pages/posts/posts",
     "pages/findCard/findCard",
     "pages/findOthers/findOthers",
     "pages/postCard/postCard",
-    "pages/postOthers/postOthers"
+    "pages/postOthers/postOthers",
+    "pages/login/login"
   ],
   "window":{
     "backgroundTextStyle":"light",
@@ -46,6 +46,7 @@
     ],
     "selectedColor":"4169e1"
   },
-  "style": "v2",
-  "sitemapLocation": "sitemap.json"
+  "sitemapLocation": "sitemap.json",
+  "usingComponents": {},
+  "style": "v2"
 }

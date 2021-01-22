@@ -1,16 +1,17 @@
 // pages/index/index.js
 Page({
-  tapName: function(event) {
-    console.log(event)
-  },
+
   /**
    * 页面的初始数据
    */
-  
   data: {
-    
+    activeKey:0,
+    findNum:5,
+    postNum:3,
   },
-  
+  onChange(event){
+    console.log(event.detail)
+  },
   /**
    * 生命周期函数--监听页面加载
    */
