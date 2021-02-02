@@ -1,0 +1,6 @@
+<van-card
+  title="{{nickName}}"
+  thumb="{{avatarUrl}}"
+  wx:for="{{num}}" wx:key="index"
+  bindtap="toRoom"
+/>

@@ -1,0 +1,17 @@
+ <view class="detail">
+  <image src="{{avatarUrl}}" class="avatar"></image>
+  <view class="info">
+  <text>昵称：{{nickName}}</text>
+  <text bindtap="reBind">电话：{{phone}}</text>
+  <text bindtap="reBind">学号：{{stdId}}</text>
+  </view>
+ </view>
+ <van-cell-group>
+  <!-- <van-cell title="我的寻物启示" bindtap="myFind" value=">" />
+  <van-cell title="我的失物招领" bindtap="myPost" value=">" /> -->
+  <!-- <van-cell title="我的消息" bindtap="myMsg" value=">" /> -->
+  <!-- 这里本来是想要实现实时通讯功能的，可惜爷不会 
+      myMsg文件夹下有写好的聊天室样式和逻辑，主要是无法实现groupID的双向唯一性遂弃置，希望后人补全-->
+  <!-- <van-cell wx:if="{{permission}}" title="管理" bindtap="admin" value=">" /> -->
+</van-cell-group>
+<van-toast id="van-toast" />

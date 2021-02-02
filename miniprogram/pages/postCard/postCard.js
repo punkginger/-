@@ -1,18 +1,47 @@
-// pages/postCard/postCard.js
+const db=wx.cloud.database()
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-
+    stdId:""
   },
+  idBlur(){
+    db.collection('postCard').where({
+      stdId:this.data.stdId
+    }).count().then(res => {
+      console.log(res.total)
+      if(res.total){
+        wx.showToast({
+          title: '有符合的校园卡',
+        })      //这里本来想实现跳转实时通讯，但是实时通讯没有做出来
+      }
+      else{
+        wx.showToast({
+          title: '没有符合的校园卡',
+        })
+        db.collection('postCard').add({
+          data:{
+            stdId:this.data.stdId,
+            time:db.serverDate()
+          }
+        })
+      }
+    })
 
+    
+  },
+  back(){
+    wx.reLaunch({
+      url: '../index/index',
+    })
+  },
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-
+    
   },
 
   /**

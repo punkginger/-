@@ -1,6 +1,7 @@
 {
   "pages":[
     "pages/index/index",
+    "pages/login/login",
     "pages/find/find",
     "pages/myId/myId",
     "pages/posts/posts",
@@ -8,7 +9,13 @@
     "pages/findOthers/findOthers",
     "pages/postCard/postCard",
     "pages/postOthers/postOthers",
-    "pages/login/login"
+    "pages/reBind/reBind",
+    "pages/myFind/myFind",
+    "pages/myPost/myPost",
+    "pages/myMsg/myMsg",
+    "pages/myMsg/room/room",
+    "pages/findDtl/findDtl",
+    "pages/postDtl/postDtl"
   ],
   "window":{
     "backgroundTextStyle":"light",
@@ -44,7 +51,7 @@
         "selectedIconPath": "image/user-h.png"
       }
     ],
-    "selectedColor":"4169e1"
+    "selectedColor":"4d4dff"
   },
   "sitemapLocation": "sitemap.json",
   "usingComponents": {},

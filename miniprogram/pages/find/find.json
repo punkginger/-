@@ -1,5 +1,5 @@
 {
   "usingComponents": {"van-icon": "@vant/weapp/icon/index"},
-  "navigationBarTitleText":"寻物",
+  "navigationBarTitleText":"发布寻物启事",
   "enablePullDownRefresh":true
 }

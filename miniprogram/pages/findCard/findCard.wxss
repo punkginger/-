@@ -1,1 +1,19 @@
-/* pages/findCard/findCard.wxss */
+page{
+  height: 100%;
+}
+
+.box{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30%;
+}
+.notice{
+  padding: 50rpx;
+  margin-bottom: 5%;
+}
+.btn{
+  padding: 30rpx;
+}

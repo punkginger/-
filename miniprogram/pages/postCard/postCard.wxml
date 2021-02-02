@@ -1,2 +1,11 @@
-<!--pages/postCard/postCard.wxml-->
-<text>pages/postCard/postCard.wxml</text>
+<view class="box">
+  <van-cell-group>
+    <van-field
+      model:value="{{stdId}}"
+      placeholder="您捡到的卡号为"
+      bind:blur="idBlur"
+    />
+</van-cell-group>
+  <van-button type="primary" class="btn" bindtap="back">发布</van-button>
+</view>
+<van-toast id="van-toast" />

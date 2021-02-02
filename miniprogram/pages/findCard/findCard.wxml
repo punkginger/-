@@ -1,5 +1,8 @@
-<view>
-  请输入您的校园卡号：
-  <input class="findCardInput" placeholder="校园卡卡号"/><!-- 寻找校园卡的输入框类名为findCardInput，等待后续补全样式 -->
-  <button class="findCardBtn" type="primary" bindtap="findCardSub">确定</button><!-- 寻找校园卡的确定按钮类名为findCardBtn -->
+<view class="box">
+  <view class="notice">
+    您的校园卡卡号为:{{stdId}}
+  </view>
+  <van-button type="primary" class="btn" bindtap="findCard">发布</van-button>
+  <van-button type="warning" class="btn" bindtap="reBind" >重绑</van-button>
 </view>
+<van-toast id="van-toast" />

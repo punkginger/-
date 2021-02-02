@@ -7,20 +7,20 @@
   </view>
   <view>
     <view wx:if="{{show==0}}">
-      <view wx:for="{{postNum}}" wx:key="index" >
+      <view wx:for="{{post}}" wx:key="index" >
         <van-card
-          desc="{{postDesc}}"
-          title="{{postTitle}}"
-          thumb="{{postPic}}"
+          title="{{item.title}}"
+          thumb="{{item.pic}}"
+          bindtap="toPost"
         />
       </view>
     </view>
     <view wx:else>
-      <view wx:for="{{findNum}}" wx:key="index">
+      <view wx:for="{{find}}" wx:key="index">
         <van-card
-          desc="{{findDesc}}"
-          title="{{findTitle}}"
-          thumb="{{findPic}}"
+          title="{{item.title}}"
+          thumb="{{item.pic}}"
+          bindtap="toFind"
         />
       </view>
     </view>

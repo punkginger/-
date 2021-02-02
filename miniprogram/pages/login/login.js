@@ -1,7 +1,6 @@
-// index.js
-// 获取应用实例
-const app = getApp()
 
+const app = getApp()
+const db=wx.cloud.database()
 import Toast from '@vant/weapp/toast/toast';
 
 Page({
@@ -11,15 +10,24 @@ Page({
     userInfo: {},
     hasUserInfo: false,
     canIUse: wx.canIUse('button.open-type.getUserInfo'),
+    id:"",
     stdId:"",
+    phone:'',
+    openid:""
   },
+
+
   // 事件处理函数
-  bindViewTap() {
-    wx.reLaunch({
-      url: '../find/find'
-    })
-  },
   onLoad() {
+    wx.cloud.callFunction({
+      name:'getOpenId',
+      success:res=>{
+        this.setData({
+          openid:res.result.openid
+        })
+      }
+    })
+    
     if (app.globalData.userInfo) {
       this.setData({
         userInfo: app.globalData.userInfo,
@@ -46,14 +54,69 @@ Page({
         }
       })
     }
+    
   },
+
+
+
   getUserInfo(e) {
-    console.log(e)
     app.globalData.userInfo = e.detail.userInfo
     this.setData({
       userInfo: e.detail.userInfo,
       hasUserInfo: true
     })
+    console.log(e.detail.userInfo)
     Toast('若不输入校园卡号则无法使用寻卡功能');
-  }
+    db.collection("user").add({
+      data:{
+        permission:false,
+        nickName:app.globalData.userInfo.nickName,
+        avatarUrl:app.globalData.userInfo.avatarUrl,
+        gender:app.globalData.userInfo.gender,
+        stdId:"0",
+        phone:"0"
+      }
+    })
+    db.collection("user").where({
+      _openid:this.data.openid
+    }).get({
+      success:res=>{
+        this.setData({
+          id:res.data[0]._id
+        })
+      }
+    })
+     wx.setStorageSync(
+      "user",this.data.userInfo
+    )
+  },
+  idBlur(){
+    db.collection("user").doc(this.data.id).update({
+      data:{
+        stdId:this.data.stdId
+      }
+    })
+  },
+  phBlur(){
+    db.collection("user").doc(this.data.id).update({
+      data:{
+        phone:this.data.phone
+      }
+    })
+  },
+
+  //点击跳转的事件
+  bindViewTap() {
+    wx.showLoading({
+      title: '数据折寿中...',
+      mask:true
+    })
+    wx.reLaunch({
+      url: '../find/find'
+    }).then(
+      wx.hideLoading()
+    )
+    /* wx.setStorageSync('id', this.data.id) */    //这样无法存值，怪
+    
+  },
 })

@@ -1,0 +1,37 @@
+<view class="box">
+  <view class="userInfo">
+
+  </view>
+  <view class="textBg">
+      <label >标题</label>
+  </view>
+  <view class="list_a">
+    {{title}}
+  </view>
+
+  <view class="textBg">
+      <label >QQ</label>
+  </view>
+  <view class="list_a">
+    {{qq}}
+  </view>
+
+  <view class="textBg">
+      <label >地址</label>
+  </view>
+  <view class="list_a">
+    {{position}}
+  </view>
+
+  <view class="textBg">
+      <label >物品描述</label>
+  </view>
+  <view class="list_a">
+    {{content}}
+  </view>
+
+  <view class="textBg">
+      <label >图片</label>
+  </view>
+  <image src="{{pic}}" wx:for="{{num}}" wx:key="index" style="width:300px;height:300px"></image>
+</view>

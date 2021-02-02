@@ -22,4 +22,14 @@
 .usermotto {
   margin-top: 200px;
 }
-
+page{
+  height: 100%;
+}
+.box{
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+}

@@ -1,1 +1,29 @@
-/* pages/myId/myId.wxss */
+page{
+  height: 100%;
+}
+
+.detail{
+  height:40%;
+  background-color: royalblue;
+}
+
+.avatar{
+  width:100px;
+  height:100px;
+  border:1px solid #ddd;
+  float:left;
+  margin:80rpx 40rpx;
+  border-radius: 50%;
+}
+
+.info wx-text{
+  display: block;
+  line-height: 70rpx;
+  height: 70rpx;
+  color: #ddd;
+  margin-top: 5%;
+}
+.info{
+  float: left;
+  margin: 50rpx 0rpx 0rpx 20rpx;
+}

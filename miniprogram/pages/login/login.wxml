@@ -1,20 +1,27 @@
 <!--index.wxml-->
 
-<view class="container">
+<view class="box">
   <view class="userinfo">
     <van-button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </van-button>
     <block wx:else>
       <image  class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
       <text class="userinfo-nickname">{{userInfo.nickName}}</text>
-      <van-cell-group>
+      <form>
         <van-field
-          value="{{stdId}}"
+          model:value="{{stdId}}"
           placeholder="请输入校园卡卡号"
           label="卡号"
-          border="{{true}}"
-          bind:confirm="onConfirm"
+          border="true"
+          bind:blur="idBlur"
         />
-      </van-cell-group>
+        <van-field
+          model:value="{{phone}}"
+          placeholder="请输入手机号"
+          label="手机号"
+          border="true"
+          bind:blur="phBlur"
+        />
+      </form>
       <van-button bindtap="bindViewTap">点击以跳转</van-button>
       <van-toast id="van-toast" />
     </block>

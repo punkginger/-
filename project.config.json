@@ -79,6 +79,72 @@
         {
           "name": "pages/myId/myId",
           "pathName": "pages/myId/myId",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/myId/myId",
+          "pathName": "pages/myId/myId",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/findCard/findCard",
+          "pathName": "pages/findCard/findCard",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/reBind/reBind",
+          "pathName": "pages/reBind/reBind",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/postCard/postCard",
+          "pathName": "pages/postCard/postCard",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/findOthers/findOthers",
+          "pathName": "pages/findOthers/findOthers",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/findOthers/findOthers",
+          "pathName": "pages/findOthers/findOthers",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/postOthers/postOthers",
+          "pathName": "pages/postOthers/postOthers",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/index/index",
+          "pathName": "pages/index/index",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/myMsg/myMsg",
+          "pathName": "pages/myMsg/myMsg",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/myMsg/room/room",
+          "pathName": "pages/myMsg/room/room",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/findDtl/findDtl",
+          "pathName": "pages/findDtl/findDtl",
           "scene": null
         }
       ]
